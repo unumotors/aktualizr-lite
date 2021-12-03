@@ -147,10 +147,6 @@ static std::unique_ptr<Uptane::Target> find_target(LiteClient& client, Uptane::H
       continue;
     }
 
-    if (!t.IsOstree()) {
-      continue;
-    }
-
     if (!target_has_tags(t, tags)) {
       continue;
     }
